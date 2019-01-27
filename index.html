@@ -17,8 +17,8 @@
     <title>TraCalorie | Meal / Calorie Tracker</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
-      <!-- navbar -->
       <div class="nav-wrapper blue">
         <div class="container">
           <a href="#" class="brand-logo center">TraCalorie</a>
@@ -32,27 +32,21 @@
     <br />
 
     <div class="container">
-      <!-- form card -->
+      <!-- Form Card -->
       <div class="card">
         <div class="card-content">
-          <span class="card-title">Add Meal / Food</span>
-          <form class="call">
+          <span class="card-title">Add Meal / Food Item</span>
+          <form class="col">
             <div class="row">
-              <div class="col s6 input-field">
-                <input
-                  type="text"
-                  placeholder="Add Food"
-                  id="item-name"
-                  required
-                />
+              <div class="input-field col s6">
+                <input type="text" placeholder="Add Item" id="item-name" />
                 <label for="item-name">Meal</label>
               </div>
-              <div class="col s6 input-field">
+              <div class="input-field col s6">
                 <input
                   type="number"
                   placeholder="Add Calories"
                   id="item-calories"
-                  required
                 />
                 <label for="item-calories">Calories</label>
               </div>
@@ -60,7 +54,7 @@
                 <i class="fa fa-plus"></i> Add Meal
               </button>
               <button class="update-btn btn orange">
-                <i class="fa fa-pencil-swaure-o"></i> Update Meal
+                <i class="fa fa-pencil-square-o"></i> Update Meal
               </button>
               <button class="delete-btn btn red">
                 <i class="fa fa-remove"></i> Delete Meal
@@ -73,32 +67,33 @@
         </div>
       </div>
 
-      <!-- Calorie Count start -->
+      <!-- Calorie Count -->
       <h3 class="center-align">
         Total Calories: <span class="total-calories">0</span>
       </h3>
 
-      <!-- item lists start -->
+      <!-- Item List -->
       <ul id="item-list" class="collection">
-        <!-- <li class="collection-item" id="item-0">
-          <strong>Chicken:</strong> <i>800 Calories</i>
+        <!--
+        <li class="collection-item" id="item-0">
+          <strong>Steak Dinner: </strong> <em>1200 Calories</em>
           <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil-alt"></i>
+            <i class="edit-item fa fa-pencil alt"></i>
           </a>
         </li>
         <li class="collection-item" id="item-0">
-          <strong>Pasta:</strong> <i>1000 Calories</i>
+          <strong>Cookie: </strong> <em>400 Calories</em>
           <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil-alt"></i>
+            <i class="edit-item fa fa-pencil alt"></i>
           </a>
         </li>
         <li class="collection-item" id="item-0">
-          <strong>Eggs:</strong> <i>200 Calories</i>
+          <strong>Eggs: </strong> <em>300 Calories</em>
           <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil-alt"></i>
+            <i class="edit-item fa fa-pencil alt"></i>
           </a>
-        </li> -->
-      </ul>
+        </li>
+      --></ul>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
